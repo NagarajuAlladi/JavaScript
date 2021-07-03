@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document2</title>
+    <script>
+
+        function myFunction()
+        {
+            document.getElementById('demo1').innerHTML="paragraph changed";
+        }
+    </script>
+
+    <script src="Script.js"></script>
+</head>
+<body>
+
+    <p id="demo"></p>
+
+    <script>
+
+        document.getElementById('demo').innerHTML="Hello";
+    </script>
+
+    <p id="demo1">Hello EVeryone!!!</p>
+    <button  onclick="myFunction()">Click Here The Paragraph Changed</button>
+
+
+    <p id="demo2">Paragraph2</p>
+
+
+    <button onclick="myFunction1()">Click here to change the content</button>
+
+    <script>
+        function myFunction1()
+        {
+            document.getElementById('demo2').innerHTML="Again Paragraph Changed!!!";
+        }
+    </script>
+
+    <p id="demo3">Paragraph3</p>
+
+    <button onclick="myFunction2()">Click to change the paragaraph</button>
+
+
+    <p id="demo4"></p>
+
+    <script>
+
+        document.getElementById('demo4').innerHTML="5+6";
+    </script>
+
+    <script>
+
+        document.write('56+1');
+        document.write('Hello');
+        document.write(56+1);
+    </script>
+
+    <p id="demo5">If you click on this entire data is not visible</p>
+
+    <button onclick="document.write(5+6)">click on this to get result</button>
+</body>
+</html>
